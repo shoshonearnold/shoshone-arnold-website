@@ -1,0 +1,24 @@
+.header-nav {
+  text-align: center;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+mat-icon {
+  text-align: center;
+}
+
+.nav-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex: 1;
+  color: #000;
+  letter-spacing: 0.1rem;
+  transition: all 0.5s ease;
+  font-size: 0.8rem;
+}
+
+mat-icon {
+  padding-top: 1em;
+}
