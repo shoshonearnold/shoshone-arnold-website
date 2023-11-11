@@ -1,0 +1,52 @@
+body {
+  background: hsla(64, 41%, 92%, 1);
+
+  background: linear-gradient(
+    hsla(64, 41%, 92%, 1) 0%,
+    hsla(196, 83%, 84%, 1) 50%,
+    hsla(305, 75%, 83%, 1) 100%
+  );
+
+  background: -moz-linear-gradient(
+    hsla(64, 41%, 92%, 1) 0%,
+    hsla(196, 83%, 84%, 1) 50%,
+    hsla(305, 75%, 83%, 1) 100%
+  );
+
+  background: -webkit-linear-gradient(
+    hsla(64, 41%, 92%, 1) 0%,
+    hsla(196, 83%, 84%, 1) 50%,
+    hsla(305, 75%, 83%, 1) 100%
+  );
+}
+
+section {
+  position: relative;
+  bottom: 2%;
+}
+
+svg {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 109%; // FIXME: this is not how you display svgs...
+}
+
+.home-header {
+  text-align: center;
+  position: relative;
+  font-size: 90%;
+  top: 20%;
+}
+
+#header {
+  font-weight: 700;
+  font-size: 5rem;
+}
+
+#sub-header {
+  font-weight: 700;
+  margin-top: 2.5rem;
+  font-size: 2rem;
+}
