@@ -1,0 +1,19 @@
+.example-container {
+  width: 500px;
+  height: 100vh;
+  background: none;
+}
+
+.example-sidenav-content {
+  height: 100%;
+  align-items: center;
+  justify-content: center;
+}
+
+.example-sidenav {
+  padding: 20px;
+}
+
+.mat-drawer-container {
+  margin-top: -118px; // FIXME: this is not how you display drawers...
+}
