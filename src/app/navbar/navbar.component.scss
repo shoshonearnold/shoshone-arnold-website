@@ -1,24 +1,19 @@
-.header-nav {
-  text-align: center;
-  width: 100%;
-  display: flex;
-  justify-content: center;
-}
-mat-icon {
-  text-align: center;
+.example-container {
+  width: 500px;
+  height: 100vh;
+  background: none;
 }
 
-.nav-item {
-  display: flex;
-  justify-content: center;
+.example-sidenav-content {
+  height: 100%;
   align-items: center;
-  flex: 1;
-  color: #000;
-  letter-spacing: 0.1rem;
-  transition: all 0.5s ease;
-  font-size: 0.8rem;
+  justify-content: center;
 }
 
-mat-icon {
-  padding-top: 1em;
+.example-sidenav {
+  padding: 20px;
+}
+
+.mat-drawer-container {
+  margin-top: -118px; // FIXME: this is not how you display drawers...
 }

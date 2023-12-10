@@ -1,12 +1,10 @@
-<!-- <div></div> -->
-<nav class="header-nav">
-  <a class="nav-item" href="/html/">Home</a>
-  <a class="nav-item" href="/css/">Projects</a>
-  <a class="nav-item" href="/js/">Work</a>
-  <a class="nav-item" href="/python/">Blog</a>
-
-  <!-- <a class="nav-item" href="/html/"><mat-icon>home</mat-icon></a>
-  <a class="nav-item" href="/css/"><mat-icon>code</mat-icon></a>
-  <a class="nav-item" href="/js/"><mat-icon>work</mat-icon></a>
-  <a class="nav-item" href="/python/"><mat-icon>info</mat-icon></a> -->
-</nav>
+<mat-drawer-container class="example-container" autosize>
+  <mat-drawer #drawer class="example-sidenav" mode="side">
+    <p>Auto-resizing sidenav</p>
+  </mat-drawer>
+  <div class="example-sidenav-content">
+    <button type="button" mat-button (click)="drawer.toggle()">
+      Toggle sidenav
+    </button>
+  </div>
+</mat-drawer-container>
