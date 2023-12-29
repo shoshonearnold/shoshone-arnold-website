@@ -9,6 +9,7 @@
 # Firebase
 /firebase/*
 .firebase/*
+firebase-debug.log
 
 # Node
 /node_modules
