@@ -7,9 +7,6 @@ import { Component, OnInit } from '@angular/core';
 })
 export class NavbarComponent implements OnInit {
   ngOnInit(): void {
-    /*
-  Slidemenu
-*/
     (function () {
       var $body = document.body,
         $menu_trigger = $body.getElementsByClassName('menu-trigger')[0];
