@@ -12,7 +12,7 @@ export class HomeComponent implements OnInit {
   }
 
   svgMagic(): void {
-    gsap.to('#path1', { y: 80, yoyo: true, duration: 12, repeat: -1 });
+    gsap.to('#path1', { y: 70, yoyo: true, duration: 12, repeat: -1 });
     gsap.to('#path2', { y: 65, yoyo: true, duration: 6, repeat: -1 });
     gsap.to('#path3', { y: 40, yoyo: true, duration: 3, repeat: -1 });
     gsap.to('#path4', { y: 19, yoyo: true, duration: 6, repeat: -1 });

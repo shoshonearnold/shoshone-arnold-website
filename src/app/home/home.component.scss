@@ -24,7 +24,7 @@ body {
   display: block;
   top: 0;
   left: 0;
-  height: 90vh;
+  height: 85vh;
   width: 135%; 
 }
 
@@ -47,13 +47,13 @@ body {
 
 #sub-header {
   font-weight: 700;
-  margin-top: 2rem;
+  margin-top: 1rem;
   font-size: 2rem;
 }
 
 @media only screen and (max-width: 1300px) {
   #visual {
-    height: 85%;
+    height: 65vh;
   }
 }
 
@@ -71,7 +71,7 @@ body {
   }
 
   #visual {
-    height: 85%;
+    height: 75vh;
   }
 }
 
