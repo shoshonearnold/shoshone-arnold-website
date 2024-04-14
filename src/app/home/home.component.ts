@@ -16,6 +16,5 @@ export class HomeComponent implements OnInit {
     gsap.to('#path2', { y: 65, yoyo: true, duration: 6, repeat: -1 });
     gsap.to('#path3', { y: 40, yoyo: true, duration: 3, repeat: -1 });
     gsap.to('#path4', { y: 19, yoyo: true, duration: 6, repeat: -1 });
-    gsap.to('#path5', { y: 22, yoyo: true, duration: 4, repeat: -1 });
   }
 }
