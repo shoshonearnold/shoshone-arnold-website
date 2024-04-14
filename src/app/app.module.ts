@@ -6,8 +6,7 @@ import { AppComponent } from './app.component';
 import { HomeComponent } from './home/home.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { NavbarComponent } from './navbar/navbar.component';
-import { MatIconModule } from '@angular/material/icon';
-import { MatSidenavModule } from '@angular/material/sidenav';
+import { MaterialModule } from './material/matarial.module';
 
 @NgModule({
   declarations: [AppComponent, HomeComponent, NavbarComponent],
@@ -15,8 +14,7 @@ import { MatSidenavModule } from '@angular/material/sidenav';
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
-    MatIconModule,
-    MatSidenavModule,
+    MaterialModule,
   ],
   providers: [],
   bootstrap: [AppComponent],
