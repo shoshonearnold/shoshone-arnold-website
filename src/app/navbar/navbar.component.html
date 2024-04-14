@@ -1,15 +1,44 @@
 <nav class="menu">
-  <input type="checkbox" href="#" class="menu-open" name="menu-open" id="menu-open" />
-  <label class="menu-open-button" for="menu-open">
-   <!-- <span class="lines line-1"></span>
-   <span class="lines line-2"></span>
-   <span class="lines line-3"></span> -->
- </label>
+  <input
+    type="checkbox"
+    href="#"
+    class="menu-open"
+    name="menu-open"
+    id="menu-open"
+  />
 
-  <a href="#" class="menu-item black"> <i class="fa fa-anchor"></i> </a>
-  <a href="#" class="menu-item black"> <i class="fa fa-coffee"></i> </a>
-  <a href="#" class="menu-item black"> <i class="fa fa-heart"></i> </a>
-  <a href="#" class="menu-item black"> <i class="fa fa-microphone"></i> </a>
-  <a href="#" class="menu-item black"> <i class="fa fa-star"></i> </a>
-  <a href="#" class="menu-item black"> <i class="fa fa-diamond"></i> </a>
+  <label class="menu-open-button" for="menu-open">
+    <mat-icon class="open-nav" matTooltip="Navigate">explore</mat-icon>
+  </label>
+
+  <a href="#" class="menu-item black">
+    <mat-icon class="open-nav">code</mat-icon>
+  </a>
+  <a href="#" class="menu-item black">
+    <mat-icon class="open-nav">history_edu</mat-icon>
+  </a>
+  <a href="#" class="menu-item black">
+    <mat-icon class="open-nav">work</mat-icon>
+  </a>
+  <a href="{{ LINKEDIN }}" target="_blank" class="menu-item black">
+    <img
+      class="open-nav"
+      width="24"
+      height="24"
+      src="https://img.icons8.com/material/24/ffffff/linkedin--v1.png"
+      alt="linkedin"
+    />
+  </a>
+  <a href="{{ GITHUB }}" target="_blank" class="menu-item black">
+    <img
+      class="open-nav"
+      width="24"
+      height="24"
+      src="https://img.icons8.com/material-outlined/24/ffffff/github.png"
+      alt="github"
+    />
+  </a>
+  <a href="{{ EMAIL }}" target="_blank" class="menu-item black">
+    <mat-icon class="open-nav">mail</mat-icon>
+  </a>
 </nav>

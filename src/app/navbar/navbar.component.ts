@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Links } from './enums/links.enum';
 
 @Component({
   selector: 'app-navbar',
@@ -6,15 +7,21 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./navbar.component.scss'],
 })
 export class NavbarComponent implements OnInit {
+  LINKEDIN = Links.LINKEDIN;
+  GITHUB = Links.GITHUB;
+  EMAIL = Links.EMAIL;
   ngOnInit(): void {
-    (function () {
-      var $body = document.body,
-        $menu_trigger = $body.getElementsByClassName('menu-trigger')[0];
+    this.controlMenu();
+  }
 
-      if (typeof $menu_trigger !== 'undefined') {
-        $menu_trigger.addEventListener('click', function () {
-          $body.className =
-            $body.className == 'menu-active' ? '' : 'menu-active';
+  controlMenu(): void {
+    (() => {
+      const body = document.body;
+      const menuInit = body.getElementsByClassName('menu-trigger')[0];
+
+      if (typeof menuInit !== 'undefined') {
+        menuInit.addEventListener('click', () => {
+          body.className === 'menu-active' ? '' : 'menu-active';
         });
       }
     }).call(this);
