@@ -8,17 +8,16 @@
   />
 
   <label class="menu-open-button" for="menu-open">
-    <mat-icon class="open-nav" matTooltip="Navigate">explore</mat-icon>
+    <mat-icon class="open-nav">explore</mat-icon>
   </label>
-
-  <a href="#" class="menu-item black">
-    <mat-icon class="open-nav">code</mat-icon>
+  <a routerLink="/" routerLinkActive="active" class="menu-item black">
+    <mat-icon class="open-nav">home</mat-icon>
   </a>
-  <a href="#" class="menu-item black">
+  <a routerLink="/blog" routerLinkActive="active" class="menu-item black">
     <mat-icon class="open-nav">history_edu</mat-icon>
   </a>
-  <a href="#" class="menu-item black">
-    <mat-icon class="open-nav">work</mat-icon>
+  <a routerLink="/about-me" routerLinkActive="active" class="menu-item black">
+    <mat-icon class="open-nav">person</mat-icon>
   </a>
   <a href="{{ LINKEDIN }}" target="_blank" class="menu-item black">
     <img
@@ -38,7 +37,7 @@
       alt="github"
     />
   </a>
-  <a href="{{ EMAIL }}" target="_blank" class="menu-item black">
-    <mat-icon class="open-nav">mail</mat-icon>
+  <a routerLink="/portfolio" routerLinkActive="active" class="menu-item black">
+    <mat-icon class="open-nav">code</mat-icon>
   </a>
 </nav>
