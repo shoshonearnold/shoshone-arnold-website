@@ -1,20 +1,9 @@
+@import '../../styles.scss';
 body {
-  background: rgb(72, 40, 255);
-  background: -moz-linear-gradient(
-    180deg,
-    rgba(72, 40, 255, 1) 0%,
-    rgba(244, 39, 46, 1) 74%
-  );
-  background: -webkit-linear-gradient(
-    180deg,
-    rgba(72, 40, 255, 1) 0%,
-    rgba(244, 39, 46, 1) 74%
-  );
-  background: linear-gradient(
-    180deg,
-    rgba(72, 40, 255, 1) 0%,
-    rgba(244, 39, 46, 1) 74%
-  );
+  background: $base-background;
+  background: $gradient-1-chrome;
+  background: $gradient-1-safari;
+  background: $gradient-1-mozilla;
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#4828ff",endColorstr="#f4272e",GradientType=1);
 }
 
@@ -27,7 +16,7 @@ body {
 }
 
 .home-header {
-  color: #e4e4e4be;
+  color: $home-header-color;
   text-align: center;
   position: relative;
   font-size: 90%;

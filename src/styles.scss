@@ -1,4 +1,15 @@
-/* You can add global styles to this file, and also import other style files */
+$base-background: rgb(72, 40, 255);
+$gradient-1-chrome: linear-gradient(180deg,rgba(72, 40, 255, 1) 0%,rgba(244, 39, 46, 1) 74%);
+$gradient-1-safari: -webkit-linear-gradient(180deg,rgba(72, 40, 255, 1) 0%,rgba(244, 39, 46, 1) 74%);
+$gradient-1-mozilla: -moz-linear-gradient(180deg,rgba(72, 40, 255, 1) 0%,rgba(244, 39, 46, 1) 74%);
+
+$home-header-color: #e4e4e4be;
+$nav-background: #596778;
+$nav-item-color: #000000;
+$nav-open-color: #ffffff;
+$nav-item-hover-color: #f4272e;
+$nav-menu-item-box-shadow:3px 3px 0 0 #00000024;
+$nav-menu-item-box-text-shadow: 1px 1px 0 #0000001f;
 
 html,
 body {
