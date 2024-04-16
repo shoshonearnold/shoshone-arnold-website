@@ -12,8 +12,8 @@ export class BlogService {
 
   getPosts(): void {
     const dbRef = ref(this.db);
-    get(dbRef).then((snapshot) => {
-      const posts = JSON.stringify(snapshot);
+    get(dbRef).then((db) => {
+      const posts = JSON.stringify(db);
       const div = document.getElementsByClassName('blog-posts')[0];
       div.innerHTML = posts;
     }).catch((error) => {
