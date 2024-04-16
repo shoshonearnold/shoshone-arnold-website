@@ -1,18 +1,4 @@
-body {
-  padding: 0;
-  margin: 0;
-  background: #596778;
-  color: #eeeeee;
-  text-align: center;
-  font-family: "Lato", sans-serif;
-}
-
-@media screen and (max-width: 700px) {
-  body {
-    padding: 170px 0 0 0;
-    width: 100%;
-  }
-}
+@import '../../styles.scss';
 
 a {
   color: inherit;
@@ -20,82 +6,35 @@ a {
 
 .menu-item,
 .menu-open-button {
-  background: #000000;
+  background: $nav-item-color;
   border-radius: 100%;
-  width: 40px;
-  height: 40px;
-  margin-left: -40px;
+  width: 2.5rem;
+  height: 2.5rem;
+  margin-left: -2.5rem;
   position: absolute;
-  color: #ffffff;
+  color: $nav-open-color;
   text-align: center;
-  line-height: 80px;
+  line-height: 5rem;
   -webkit-transform: translate3d(0, 0, 0);
   transform: translate3d(0, 0, 0);
   -webkit-transition: -webkit-transform ease-out 200ms;
-  transition: -webkit-transform ease-out 200ms;
   transition: transform ease-out 200ms;
-  transition: transform ease-out 200ms, -webkit-transform ease-out 200ms;
-}
-
-.menu-open {
-  display: none;
 }
 
 .menu {
   position: relative;
   padding: 6rem;
   left: 2rem;
-  width: 80px;
-  height: 80px;
+  width: 5rem;
+  height: 5rem;
   text-align: center;
   box-sizing: border-box;
-  font-size: 26px;
+  font-size: 1.625rem;
 }
 
-.menu-item:nth-child(3) {
+.menu-item {
   -webkit-transition-duration: 180ms;
   transition-duration: 180ms;
-}
-
-.menu-item:nth-child(4) {
-  -webkit-transition-duration: 180ms;
-  transition-duration: 180ms;
-}
-
-.menu-item:nth-child(5) {
-  -webkit-transition-duration: 180ms;
-  transition-duration: 180ms;
-}
-
-.menu-item:nth-child(6) {
-  -webkit-transition-duration: 180ms;
-  transition-duration: 180ms;
-}
-
-.menu-item:nth-child(7) {
-  -webkit-transition-duration: 180ms;
-  transition-duration: 180ms;
-}
-
-.menu-item:nth-child(8) {
-  -webkit-transition-duration: 180ms;
-  transition-duration: 180ms;
-}
-
-.menu-item:nth-child(9) {
-  -webkit-transition-duration: 180ms;
-  transition-duration: 180ms;
-}
-
-.menu-open-button {
-  -webkit-transition-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1.275);
-  transition-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1.275);
-  -webkit-transition-duration: 400ms;
-  transition-duration: 400ms;
-  -webkit-transform: scale(1.1, 1.1) translate3d(0, 0, 0);
-  transform: scale(1.1, 1.1) translate3d(0, 0, 0);
-  cursor: pointer;
-  box-shadow: 3px 3px 0 0 rgba(0, 0, 0, 0.14);
 }
 
 .menu-open-button:hover {
@@ -167,9 +106,9 @@ a {
 }
 
 .black {
-  background-color: #000000;
-  box-shadow: 3px 3px 0 0 rgba(0, 0, 0, 0.14);
-  text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.12);
+  background-color: $nav-item-color;
+  box-shadow: $nav-menu-item-box-shadow;
+  text-shadow: $nav-menu-item-box-text-shadow;
 }
 
 .menu-open {
@@ -187,51 +126,15 @@ a {
   bottom: 0;
   left: 2rem;
   right: 0;
-  width: 80px;
-  height: 80px;
+  width: 5rem;
+  height: 5rem;
   text-align: center;
   box-sizing: border-box;
-  font-size: 26px;
+  font-size: 1.625rem;
 }
 
 .menu-item:hover {
-  background: #f4272e;
-  //color: #3290b1;
-}
-
-.menu-item:nth-child(3) {
-  -webkit-transition-duration: 180ms;
-  transition-duration: 180ms;
-}
-
-.menu-item:nth-child(4) {
-  -webkit-transition-duration: 180ms;
-  transition-duration: 180ms;
-}
-
-.menu-item:nth-child(5) {
-  -webkit-transition-duration: 180ms;
-  transition-duration: 180ms;
-}
-
-.menu-item:nth-child(6) {
-  -webkit-transition-duration: 180ms;
-  transition-duration: 180ms;
-}
-
-.menu-item:nth-child(7) {
-  -webkit-transition-duration: 180ms;
-  transition-duration: 180ms;
-}
-
-.menu-item:nth-child(8) {
-  -webkit-transition-duration: 180ms;
-  transition-duration: 180ms;
-}
-
-.menu-item:nth-child(9) {
-  -webkit-transition-duration: 180ms;
-  transition-duration: 180ms;
+  background: $nav-item-hover-color;
 }
 
 .menu-open-button {
@@ -243,7 +146,7 @@ a {
   -webkit-transform: scale(1.1, 1.1) translate3d(0, 0, 0);
   transform: scale(1.1, 1.1) translate3d(0, 0, 0);
   cursor: pointer;
-  box-shadow: 3px 3px 0 0 rgba(0, 0, 0, 0.14);
+  box-shadow: $nav-menu-item-box-shadow;
 }
 
 .menu-open-button:hover {
@@ -312,28 +215,27 @@ a {
     position: relative;
     padding: 5.5rem;
     left: 2rem;
-    width: 80px;
-    height: 80px;
+    width: 5rem;
+    height: 5rem;
     text-align: center;
     box-sizing: border-box;
-    font-size: 26px;
+    font-size: 1.625rem;
   }
 
   .lines {
     text-align: center;
-    width: 12.5px;
-    height: 3px;
-    background: #596778;
+    width: 0.781rem;
+    height: 0.188rem;
+    background: $nav-background;
     display: block;
     position: absolute;
     top: 50%;
     left: 50%;
-    margin-left: -12.5px;
-    margin-top: -1.5px;
+    margin-left: -0.781rem;
+    margin-top: -0.094rem;
     -webkit-transition: -webkit-transform 200ms;
     transition: -webkit-transform 200ms;
     transition: transform 200ms;
-    transition: transform 200ms, -webkit-transform 200ms;
   }
 
   .menu-open:checked ~ .menu-item:nth-child(3) {
@@ -385,11 +287,11 @@ a {
     padding: 6rem;
     top: -1.9rem;
     left: 0rem;
-    width: 80px;
-    height: 80px;
+    width: 5rem;
+    height: 5rem;
     text-align: center;
     box-sizing: border-box;
-    font-size: 26px;
+    font-size: 1.625rem;
   }
 
   .menu-open:checked ~ .menu-item:nth-child(3) {
