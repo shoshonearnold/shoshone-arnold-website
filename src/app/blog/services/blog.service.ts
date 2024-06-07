@@ -1,23 +1,35 @@
 import { Injectable } from '@angular/core';
-import { child, get, getDatabase, onValue, ref, set } from "firebase/database";
-
+import { child, get, getDatabase, onValue, ref, set } from 'firebase/database';
 
 @Injectable({
-  providedIn: 'root'
+  providedIn: 'root',
 })
 export class BlogService {
   db = getDatabase();
+  articles: any;
 
-  constructor() {}
+  constructor() {
+    this.articles = {};
+  }
+
+  ngOnInit(): void {
+    this.getPosts();
+  }
 
   getPosts(): void {
     const dbRef = ref(this.db);
-    get(dbRef).then((db) => {
-      const posts = JSON.stringify(db);
-      const div = document.getElementsByClassName('blog-posts')[0];
-      div.innerHTML = posts;
-    }).catch((error) => {
-      console.error(error);
-    });
+    get(dbRef)
+      .then((db) => {
+        const posts = db.val();
+        this.articles = {
+          title: posts.data.posts[0].title,
+          author: posts.data.posts[0].author,
+          date: posts.data.posts[0].date,
+          post: posts.data.posts[0].post
+        }
+      })
+      .catch((error) => {
+        console.error(error);
+      });
   }
 }

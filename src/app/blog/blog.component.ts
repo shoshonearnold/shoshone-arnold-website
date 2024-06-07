@@ -6,9 +6,9 @@ import { BlogService } from './services/blog.service';
   templateUrl: './blog.component.html',
   styleUrls: ['./blog.component.scss']
 })
-export class BlogComponent implements OnInit{
+export class BlogComponent implements OnInit {
 
-  constructor(private blog: BlogService) {}
+  constructor(public blog: BlogService) {}
 
   ngOnInit(): void {
     this.blog.getPosts();
