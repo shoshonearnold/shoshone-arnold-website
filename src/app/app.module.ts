@@ -14,6 +14,8 @@ import { BlogService } from './blog/services/blog.service';
 import { initializeApp } from 'firebase/app';
 import { getAnalytics } from 'firebase/analytics';
 import { getDatabase } from 'firebase/database';
+import { NgxSkeletonLoaderModule } from 'ngx-skeleton-loader';
+
 
 const firebaseConfig = {
   apiKey: 'AIzaSyD78-uM-xu49Jq10RE1QD8Xqu7x5xqtusQ',
@@ -45,6 +47,7 @@ getDatabase(app);
     AppRoutingModule,
     BrowserAnimationsModule,
     MaterialModule,
+    NgxSkeletonLoaderModule
   ],
   providers: [BlogService],
   bootstrap: [AppComponent],
