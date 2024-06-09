@@ -65,10 +65,10 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "browserTarget": "shoshone-arnold-website:build:production"
+              "buildTarget": "shoshone-arnold-website:build:production"
             },
             "development": {
-              "browserTarget": "shoshone-arnold-website:build:development"
+              "buildTarget": "shoshone-arnold-website:build:development"
             }
           },
           "defaultConfiguration": "development"
@@ -76,7 +76,7 @@
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "shoshone-arnold-website:build"
+            "buildTarget": "shoshone-arnold-website:build"
           }
         },
         "test": {
