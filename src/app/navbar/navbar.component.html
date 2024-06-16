@@ -1,43 +1,46 @@
-<nav class="menu">
-  <input
-    type="checkbox"
-    href="#"
-    class="menu-open"
-    name="menu-open"
-    id="menu-open"
-  />
+<div class="nav-container">
+  <nav class="menu">
+    <input
+      type="checkbox"
+      href="#"
+      class="menu-open"
+      name="menu-open"
+      id="menu-open"
+    />
+  
+    <label class="menu-open-button" for="menu-open">
+      <mat-icon class="open-nav">explore</mat-icon>
+    </label>
+    <a routerLink="/" routerLinkActive="active" class="menu-item black">
+      <mat-icon class="open-nav">home</mat-icon>
+    </a>
+    <a routerLink="/blog" routerLinkActive="active" class="menu-item black">
+      <mat-icon class="open-nav">history_edu</mat-icon>
+    </a>
+    <a routerLink="/about-me" routerLinkActive="active" class="menu-item black">
+      <mat-icon class="open-nav">person</mat-icon>
+    </a>
+    <a href="{{ LINKEDIN }}" target="_blank" class="menu-item black">
+      <img
+        class="open-nav"
+        width="24"
+        height="24"
+        src="https://img.icons8.com/material/24/ffffff/linkedin--v1.png"
+        alt="linkedin"
+      />
+    </a>
+    <a href="{{ GITHUB }}" target="_blank" class="menu-item black">
+      <img
+        class="open-nav"
+        width="24"
+        height="24"
+        src="https://img.icons8.com/material-outlined/24/ffffff/github.png"
+        alt="github"
+      />
+    </a>
+    <a routerLink="/portfolio" routerLinkActive="active" class="menu-item black">
+      <mat-icon class="open-nav">code</mat-icon>
+    </a>
+  </nav>
+</div>
 
-  <label class="menu-open-button" for="menu-open">
-    <mat-icon class="open-nav">explore</mat-icon>
-  </label>
-  <a routerLink="/" routerLinkActive="active" class="menu-item black">
-    <mat-icon class="open-nav">home</mat-icon>
-  </a>
-  <a routerLink="/blog" routerLinkActive="active" class="menu-item black">
-    <mat-icon class="open-nav">history_edu</mat-icon>
-  </a>
-  <a routerLink="/about-me" routerLinkActive="active" class="menu-item black">
-    <mat-icon class="open-nav">person</mat-icon>
-  </a>
-  <a href="{{ LINKEDIN }}" target="_blank" class="menu-item black">
-    <img
-      class="open-nav"
-      width="24"
-      height="24"
-      src="https://img.icons8.com/material/24/ffffff/linkedin--v1.png"
-      alt="linkedin"
-    />
-  </a>
-  <a href="{{ GITHUB }}" target="_blank" class="menu-item black">
-    <img
-      class="open-nav"
-      width="24"
-      height="24"
-      src="https://img.icons8.com/material-outlined/24/ffffff/github.png"
-      alt="github"
-    />
-  </a>
-  <a routerLink="/portfolio" routerLinkActive="active" class="menu-item black">
-    <mat-icon class="open-nav">code</mat-icon>
-  </a>
-</nav>
