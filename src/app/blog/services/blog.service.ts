@@ -1,5 +1,5 @@
 import { Injectable } from '@angular/core';
-import { child, get, getDatabase, onValue, ref, set } from 'firebase/database';
+import { get, getDatabase, ref } from '@firebase/database';
 
 @Injectable({
   providedIn: 'root',
@@ -25,8 +25,8 @@ export class BlogService {
           title: posts.data.posts[0].title,
           author: posts.data.posts[0].author,
           date: posts.data.posts[0].date,
-          post: posts.data.posts[0].post
-        }
+          post: posts.data.posts[0].post,
+        };
       })
       .catch((error) => {
         console.error(error);

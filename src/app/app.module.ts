@@ -11,9 +11,9 @@ import { PortfolioComponent } from './portfolio/portfolio.component';
 import { BlogComponent } from './blog/blog.component';
 import { AboutComponent } from './about/about.component';
 import { BlogService } from './blog/services/blog.service';
-import { initializeApp } from 'firebase/app';
-import { getAnalytics } from 'firebase/analytics';
-import { getDatabase } from 'firebase/database';
+import { initializeApp } from '@firebase/app';
+import { getAnalytics } from '@firebase/analytics';
+import { getDatabase } from '@firebase/database';
 import { NgxSkeletonLoaderModule } from 'ngx-skeleton-loader';
 
 
